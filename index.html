@@ -22,7 +22,7 @@
             </div>
 
             <div class="ticket">
-                <h1 id="total-seat">40</h1>
+                <h1 id="totalSeat">40</h1>
             </div>
 
             <div class="seatAndPrice flex gap-20">
@@ -32,33 +32,7 @@
 
                         <tbody>
                             <!-- row 1 -->
-                            <tr>
-                                <td>A</td>
-                                <td>A1</td>
-                                <td>A2</td>
-                                <td>A3</td>
-                                <td>A4</td>
-                            </tr>
-                            <tr>
-                                <td>B</td>
-                                <td>B1</td>
-                                <td class="bg-success text-white">B2</td>
-                                <td>B3</td>
-                                <td>B4</td>
-                            </tr>
-                            <tr>
-                                <td>C</td>
-                                <td>C1</td>
-                                <td>C2</td>
-                                <td>C3</td>
-                                <td>C4</td>
-                            </tr>
-                            <tr>
-                                <td>D</td>
-                                <td>D1</td>
-                                <td>D2</td>
-                                <td>D3</td>
-                                <td>D4</td>
+                            <tr id="seatName" class="grid grid-cols-4">
                             </tr>
 
                         </tbody>
@@ -73,48 +47,72 @@
                                 <thead>
                                     <tr>
 
-                                        <th>Seat <span id="selectedSeat"
-                                                class="badge badge-success text-white font-sm">2</span>
+                                        <th>Seat <span id="selectedSeatTotal"
+                                                class="badge badge-success text-white font-sm">0</span>
                                         </th>
                                         <th>Class</th>
                                         <th>Price</th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <!-- row 1 -->
-                                    <tr>
-                                        <td>C2</td>
-                                        <td>Economoy</td>
-                                        <td>550</td>
-                                    </tr>
-                                    <tr>
-                                        <td>C2</td>
-                                        <td>Economoy</td>
-                                        <td>550</td>
-                                    </tr>
+                                <tbody id="selectedSeatItems">
+                                    <!-- row  -->
 
                                 </tbody>
                             </table>
-                            <div class="totalPrice flex justify-between font-bold">
+                            <div class=" flex justify-between font-bold">
                                 <h3>Total Price</h3>
-                                <h3>BDT <span id="totalPrice">1100</span></h3>
+                                <h3>BDT <span id="totalPrice">00.00</span></h3>
                             </div>
-                            <div class="flex my-4">
-                                <input class="outline-none bg-gray-100 pl-5 w-full" placeholder="Have Any Coupon?" />
-                                <button class="btn join-item rounded-r-full bg-success text-white">Apply</button>
+
+
+
+                            <div class="flex my-4" id="couponBox">
+                                <input class="outline-none bg-gray-100 pl-5 w-full" placeholder="Have Any Coupon?"
+                                    id="couponInput" disabled />
+
+                                <button class="btn rounded-r-full text-black bg-green-500 hover:gb-green-500 text-white"
+                                    id="couponBtn" disabled>Apply</button>
                             </div>
-                            <div class="gradTotal flex justify-between my-4 font-bold">
+                            <div class=" flex justify-between font-bold my-4" id="discountContent">
+
+                            </div>
+
+                            <div class=" flex justify-between my-4 font-bold">
                                 <h3>Grand Total</h3>
-                                <h3>BDT <span id="totalPrice">1100</span></h3>
+                                <h3>BDT <span id="grandPrice">00.00</span> </h3>
                             </div>
                         </div>
                     </div>
                     <div id="userInfo">
                         <form>
-                            <input type="text" placeholder="Your Name" class="border w-full px-4 py-2">
-                            <input type="email" placeholder="Your email" class="border w-full px-4 py-2 my-4">
-                            <input type="number" placeholder="Your Number" class="border w-full px-4 py-2">
-                            <input type="submit" value="Next" class="btn bg-green-500 text-white w-full mt-4">
+                            <input type="text" placeholder="Your Name" class="border w-full px-4 py-2" id="userName"
+                                required>
+                            <input type="number" placeholder="Your Number" class="border w-full px-4 py-2 my-4"
+                                id="userPhone" onchange="userNumber()" required>
+
+                            <input type="email" placeholder="Your email" class="border w-full px-4 py-2" id="userEmail">
+
+                            <input type="submit" value="Next"
+                                class="btn bg-green-500 text-white w-full mt-4 hover:bg-green-500" disabled id="nextBtn"
+                                onclick="my_modal_5.showModal()">
+
+                            <!-- Open the modal using ID.showModal() method -->
+
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
+                                <div class="modal-box text-center">
+                                    <h1 class="text-green-500 font-bold  text-2xl">SUCCESS</h1>
+                                    <h3 class="font-bold">Thank you for Booking Our Bus Seats. </h3>
+                                    <p class="py-4 font-bold">We are working hard to find the best service and
+                                        deals for you. </p>
+                                    <p>Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn bg-green-500 text-white">Continue</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
                         </form>
 
                     </div>
@@ -123,6 +121,7 @@
         </div>
     </section>
 
+    <script src="index.js"></script>
 </body>
 
 </html>
