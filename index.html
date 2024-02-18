@@ -12,9 +12,9 @@
 
 <body>
 
-    <div class="wrapper px-6 md:px-10 lg:px-24 bg-gray-50 ">
-        <!-- Navbar -->
+    <div class="wrapper px-4 md:px-10 lg:px-24 bg-gray-50 ">
 
+        <!-- Navbar -->
         <div class="navbar bg-base-100 ">
             <div class="navbar-start">
                 <div class="dropdown">
@@ -33,7 +33,7 @@
                         <li><a class="text-lg">Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl uppercase text-green-500  font-bold">Green Line</a>
+                <a class="btn btn-ghost text-xl uppercase text-green-500  font-bold">Josim Paribahan</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -50,7 +50,6 @@
         </div>
 
         <!-- Banner Area -->
-
         <div class="hero h-[50vh] md:h-[77vh] rounded-xl overflow-hidden my-5"
             style="background-image: url(assets/banner.png);">
             <div class="hero-overlay bg-opacity-60"></div>
@@ -58,8 +57,7 @@
                 <div class="max-w-xl">
                     <h1 class="mb-5 text-3xl md:text-5xl font-bold">End-to-End Travel with <br> <span
                             class="text-green-500">Josim
-                            Paribahan</span>
-                    </h1>
+                            Paribahan</span></h1>
                     <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
                         integrated testing features allow for a streamlined .</p>
                     <a href="#seatPlanSection" class="btn btn-success text-white">Buy a Ticket</a>
@@ -69,15 +67,16 @@
 
         <!-- 3 Card section-->
         <section class="md:flex justify-around md:space-x-6 space-y-4 md:space-y-0 md:-mt-24 px-10">
+            <!-- Card 1 -->
             <div class="card card-side bg-base-100 shadow-xl px-10  border-b-2 border-green-500">
                 <figure><img src="assets/people.png" alt="Movie" />
                 </figure>
                 <div class="card-body">
                     <h2 class="text-3xl font-bold">500K+</h2>
                     <p class="text-lg font-normal">Registered users</p>
-
                 </div>
             </div>
+            <!-- Card 2 -->
             <div class="card card-side bg-base-100 shadow-xl px-10  border-b-2 border-green-500">
                 <figure><img src="assets/ticket-cupon.png" alt="Movie" />
                 </figure>
@@ -87,13 +86,14 @@
 
             </div>
         </div>
+        <!-- Card 3 -->
         <div class=" card card-side bg-base-100 shadow-xl px-10 border-b-2 border-green-500">
                         <figure><img src="assets/stoppage.png" alt="Movie" />
                         </figure>
+
                         <div class="card-body">
                             <h2 class="text-3xl font-bold">80K+</h2>
                             <p>Rental partners</p>
-
                         </div>
                 </div>
         </section>
@@ -138,39 +138,35 @@
             </div>
         </section>
 
+
         <!-- Paribahan Section -->
-        <section class="px-10 border-t-4 border-green-500 rounded-t-3xl">
+        <section class="border-t-4 border-green-500 rounded-t-3xl">
             <div class="container">
-                <div class="paribahan title w-1/2 mx-auto text-center my-5">
+                <div class="paribahan title md:w-1/2 mx-auto text-center my-5">
                     <h1 class="text-4xl font-bold mb-2 uppercase">Josim Paribahan</h1>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quaerat, ab voluptate corporis
-                        nulla
-                        obcaecati quia minus natus culpa deleniti, blanditiis, distinctio voluptas laborum tempora.
-                        Mollitia
-                        iste vel accusamus provident?</p>
+                    <p>Experience comfort and reliability with Josim Paribahan. From plush seating to onboard
+                        amenities, we ensure a seamless journey every time.</p>
                 </div>
 
-                <div class="ticket flex justify-between rounded-lg my-20 bg-white">
-                    <div class="w-[60%] p-10">
+                <div class="ticket md:flex justify-between rounded-lg my-20 bg-white">
+                    <div class="md:w-[60%] p-2 md:p-10">
 
-
-                        <div class="flex justify-between items-center mb-6 ">
-
-                            <div class="flex items-center space-x-2">
+                        <div class="md:flex justify-between items-center mb-6 ">
+                            <div class="flex items-center space-x-2 ">
                                 <img class="w-[50px] h-[30px]" src="assets/bus-logo.png" alt="">
                                 <div>
                                     <h2 class="font-bold text-2xl uppercase">Josim Paribahan</h2>
                                     <p>Coach-009-WEB ! AC_Business</p>
                                 </div>
                             </div>
-                            <div class="flex gap-2 bg-[#ddf8d9] rounded h-fit-content p-2">
-                                <div><img src="assets/seat-green.png" alt=""></div>
+                            <div class="flex gap-2 bg-[#ddf8d9] rounded p-2 mt-4 md:mt-0">
+                                <div><img src="assets/seat-green.png" alt="Green Seat"></div>
                                 <h1 class="text-[#1DD100] text-lg "> <span id="totalSeat">40</span> Seats left</h1>
                             </div>
                         </div>
 
 
-
+                        <!-- Ticket Body -->
                         <div class="ticketBody bg-gray-100 p-4 rounded">
                             <div class="flex justify-between">
                                 <h3>Route</h3>
@@ -187,18 +183,21 @@
                             </div>
                         </div>
                     </div>
-                    <img src="assets/info-devider.png" alt="" class="w-20">
-                    <div class="p-10 w-[25%] flex flex-col justify-center items-center">
 
+                    <!-- Divider Image -->
+                    <img src="assets/info-devider.png" alt="" class="w-20 hidden md:block">
+
+                    <!-- Ticket Price -->
+                    <div class="p-10 md:w-[25%] flex flex-col justify-center items-center">
                         <img src="assets/fare.png" alt="" class="w-20">
-
                         <h1 class="text-center text-4xl font-bold">550 Taka</h1>
                         <h1 class="text-center text-xl">Per Seat</h1>
                     </div>
                 </div>
 
-                <!-- Seat -->
-                <div class="seatAndPrice flex gap-20" id="seatPlanSection">
+                <!-- Seat Plan area-->
+                <div class="seatAndPrice md:flex gap-20" id="seatPlanSection">
+                    <!-- Seat Area side -->
                     <div class="seatPlan flex-1">
                         <h1 class="font-bold text-xl">Select You Seat</h1>
                         <div class="my-4 flex justify-between  border-dashed border-b-2 border-t-2   py-3 ">
@@ -210,7 +209,12 @@
                                 <img src="/assets/seat-green-filled.png" alt="">
                                 <p class="text-md font-semibold text-green-500">Selected</p>
                             </div>
+                        </div>
 
+                        <div class="my-4 flex justify-end  py-3 ">
+                            <div class="w-20 h-10 rounded-lg bg-gray-200 flex items-center justify-center">
+                                <img src="/assets/steering-wheel.png" alt="" class="w-5 h-5">
+                            </div>
                         </div>
                         <table class="table">
 
@@ -222,15 +226,17 @@
                             </tbody>
                         </table>
                     </div>
-                    <div class="seatDetails flex-1">
-                        <h1 class="text-xl">Select Your Seat</h1>
-                        <div id="ticketPriceCalculation">
+                    <!-- Seat calculation side -->
+                    <div class="seatDetails flex-1 mt-8 md:mt-0">
+                        <h1 class="text-xl font-bold">Select Your Seat</h1>
+
+                        <div id="ticketPriceCalculation" class="bg-gray-100 p-4 rounded-lg my-6">
                             <div class="overflow-x-auto">
+
                                 <table class="table">
                                     <!-- head -->
                                     <thead>
-                                        <tr>
-
+                                        <tr class="border-b-2 border-dashed border-green-500 py-2">
                                             <th>Seat <span id="selectedSeatTotal"
                                                     class="badge badge-success text-white font-sm">0</span>
                                             </th>
@@ -238,12 +244,14 @@
                                             <th>Price</th>
                                         </tr>
                                     </thead>
-                                    <tbody id="selectedSeatItems">
+                                    <tbody id="selectedSeatItems"
+                                        class="border-b-2 border-dashed border-green-500 py-2">
+
                                         <!-- row  -->
 
                                     </tbody>
                                 </table>
-                                <div class=" flex justify-between font-bold">
+                                <div class="flex justify-between font-bold mt-4">
                                     <h3>Total Price</h3>
                                     <h3>BDT <span id="totalPrice">00.00</span></h3>
                                 </div>
@@ -251,13 +259,13 @@
 
 
                                 <div class="flex my-4" id="couponBox">
-                                    <input class="outline-none bg-gray-100 pl-5 w-full" placeholder="Have Any Coupon?"
+                                    <input class="outline-none bg-white pl-5 w-full" placeholder="Have Any Coupon?"
                                         id="couponInput" disabled />
-
                                     <button
                                         class="btn rounded-r-full text-black bg-green-500 hover:gb-green-500 text-white"
                                         id="couponBtn" disabled>Apply</button>
                                 </div>
+
                                 <div class=" flex justify-between font-bold my-4" id="discountContent">
 
                                 </div>
@@ -268,38 +276,52 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- User form -->
                         <div id="userInfo">
+
                             <form>
                                 <input type="text" placeholder="Your Name" class="border w-full px-4 py-2" id="userName"
                                     required>
                                 <input type="number" placeholder="Your Number" class="border w-full px-4 py-2 my-4"
-                                    id="userPhone" onchange="userNumber()" required>
+                                    id="userPhone" required>
 
                                 <input type="email" placeholder="Your email" class="border w-full px-4 py-2"
                                     id="userEmail">
 
                                 <input type="submit" value="Next"
                                     class="btn bg-green-500 text-white w-full mt-4 hover:bg-green-500" disabled
-                                    id="nextBtn" onclick="my_modal_5.showModal()">
+                                    id="nextBtn" onclick="my_modal_4.showModal()">
+                                <div class="flex justify-between mt-4">
+                                    <li class="underline list-none cursor-pointer text-gray-500">Terms & condition</li>
+                                    <li class="underline list-none cursor-pointer text-gray-500">Conditional policy</li>
+                                </div>
 
-                                <!-- Open the modal using ID.showModal() method -->
-
-                                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
-                                    <div class="modal-box text-center">
-                                        <h1 class="text-green-500 font-bold  text-2xl">SUCCESS</h1>
-                                        <h3 class="font-bold">Thank you for Booking Our Bus Seats. </h3>
-                                        <p class="py-4 font-bold">We are working hard to find the best service and
-                                            deals for you. </p>
-                                        <p>Shortly you will find a confirmation in your email.</p>
-                                        <div class="modal-action">
-                                            <form method="dialog">
-                                                <!-- if there is a button in form, it will close the modal -->
-                                                <button class="btn bg-green-500 text-white">Continue</button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </dialog>
                             </form>
+
+
+                            <dialog id="my_modal_4" class="modal">
+                                <div class="modal-box w-11/12 max-w-5xl text-center">
+                                    <img src="assets/success.png" alt="" class="mx-auto">
+                                    <h3 class="font-bold text-lg text-green">Success!</h3>
+                                    <h4 class="font-bold">Thank you for Booking Our Bus Seats. </h4>
+                                    <h4 class="font-bold">We are working hard to find the best service and deals for
+                                        you. </h4>
+                                    <p class="py-4">Shortly you will find a confirmation in your email.</p>
+                                    <div class="modal-action">
+                                        <form method="dialog">
+
+                                            <button class="btn bg-green-500 text-white hover:bg-green-500"
+                                                id="continueBtn">Continue</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+
+
+
+
+
 
                         </div>
                     </div>
