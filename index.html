@@ -10,11 +10,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 px-24">
 
     <!-- Navbar -->
 
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-base-100 ">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -46,6 +46,53 @@
             <a class="btn border-green-500 bg-green-200 text-green-500">Bus <img src="assets/bus-icon.png" alt=""></a>
         </div>
     </div>
+
+    <!-- Banner Area -->
+
+    <div class="hero min-h-[77vh] rounded-xl overflow-hidden my-5" style="background-image: url(assets/banner.png);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-xl">
+                <h1 class="mb-5 text-5xl font-bold">End-to-End Travel with <br> <span class="text-green-500">P
+                        Paribahan</span>
+                </h1>
+                <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The
+                    integrated testing features allow for a streamlined .</p>
+                <button class="btn btn-success text-white text-xl">Buy Tickets</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3 Card section-->
+    <section class="flex justify-around space-x-6 -mt-24 px-10">
+        <div class="card card-side bg-base-100 shadow-xl px-10  border-b-2 border-green-500">
+            <figure><img src="assets/people.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+                <h2 class="text-3xl font-bold">500K+</h2>
+                <p class="text-lg font-normal">Registered users</p>
+
+            </div>
+        </div>
+        <div class="card card-side bg-base-100 shadow-xl px-10  border-b-2 border-green-500">
+            <figure><img src="assets/ticket-cupon.png" alt="Movie" />
+            </figure>
+            <div class="card-body">
+                <h2 class="text-3xl font-bold"">1.7 lacks</h2>
+                <p>Tickets sold</p>
+
+            </div>
+        </div>
+        <div class=" card card-side bg-base-100 shadow-xl px-10 border-b-2 border-green-500">
+                    <figure><img src="assets/stoppage.png" alt="Movie" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="text-3xl font-bold">80K+</h2>
+                        <p>Rental partners</p>
+
+                    </div>
+            </div>
+    </section>
 
     <!-- Paribahan Section -->
     <section class="px-10">
@@ -95,7 +142,7 @@
                 </div>
                 <div class="flex-2">
 
-                    <i class="fa-solid fa-bangladeshi-taka-sign text-white bg-green-500 rounded-full p-4 h-6 w-6"></i>
+                    <img src="assets/fare.png" alt="">
 
                     <h1 class="text-center text-xl">550 Taka</h1>
                     <h1 class="text-center">Per Seat</h1>
