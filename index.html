@@ -5,9 +5,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
+
+    <!-- Paribahan Section -->
+    <section class="px-10">
+        <div class="container">
+            <div class="paribahan title">
+                <h1>J Paribahan</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quaerat, ab voluptate corporis nulla
+                    obcaecati quia minus natus culpa deleniti, blanditiis, distinctio voluptas laborum tempora. Mollitia
+                    iste vel accusamus provident?</p>
+            </div>
+
+            <div class="ticket">
+                <h1 id="total-seat">40</h1>
+            </div>
+
+            <div class="seatAndPrice flex gap-20">
+                <div class="seatPlan flex-1">
+                    <h1 class="font-bold">Select You Seat</h1>
+                    <table class="table">
+
+                        <tbody>
+                            <!-- row 1 -->
+                            <tr>
+                                <td>A</td>
+                                <td>A1</td>
+                                <td>A2</td>
+                                <td>A3</td>
+                                <td>A4</td>
+                            </tr>
+                            <tr>
+                                <td>B</td>
+                                <td>B1</td>
+                                <td class="bg-success text-white">B2</td>
+                                <td>B3</td>
+                                <td>B4</td>
+                            </tr>
+                            <tr>
+                                <td>C</td>
+                                <td>C1</td>
+                                <td>C2</td>
+                                <td>C3</td>
+                                <td>C4</td>
+                            </tr>
+                            <tr>
+                                <td>D</td>
+                                <td>D1</td>
+                                <td>D2</td>
+                                <td>D3</td>
+                                <td>D4</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="seatDetails flex-1">
+                    <h1>Select Your Seat</h1>
+                    <div id="ticketPriceCalculation">
+                        <div class="overflow-x-auto">
+                            <table class="table">
+                                <!-- head -->
+                                <thead>
+                                    <tr>
+
+                                        <th>Seat <span id="selectedSeat"
+                                                class="badge badge-success text-white font-sm">2</span>
+                                        </th>
+                                        <th>Class</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td>C2</td>
+                                        <td>Economoy</td>
+                                        <td>550</td>
+                                    </tr>
+                                    <tr>
+                                        <td>C2</td>
+                                        <td>Economoy</td>
+                                        <td>550</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="totalPrice flex justify-between font-bold">
+                                <h3>Total Price</h3>
+                                <h3>BDT <span id="totalPrice">1100</span></h3>
+                            </div>
+                            <div class="flex my-4">
+                                <input class="outline-none bg-gray-100 pl-5 w-full" placeholder="Have Any Coupon?" />
+                                <button class="btn join-item rounded-r-full bg-success text-white">Apply</button>
+                            </div>
+                            <div class="gradTotal flex justify-between my-4 font-bold">
+                                <h3>Grand Total</h3>
+                                <h3>BDT <span id="totalPrice">1100</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="userInfo">
+                        <form>
+                            <input type="text" placeholder="Your Name" class="border w-full px-4 py-2">
+                            <input type="email" placeholder="Your email" class="border w-full px-4 py-2 my-4">
+                            <input type="number" placeholder="Your Number" class="border w-full px-4 py-2">
+                            <input type="submit" value="Next" class="btn bg-green-500 text-white w-full mt-4">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
