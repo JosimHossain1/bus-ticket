@@ -5,29 +5,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl uppercase text-green-500  font-bold">Green Line</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a class="btn border-green-500 bg-green-200 text-green-500">Bus <img src="assets/bus-icon.png" alt=""></a>
+        </div>
+    </div>
 
     <!-- Paribahan Section -->
     <section class="px-10">
         <div class="container">
-            <div class="paribahan title">
-                <h1>J Paribahan</h1>
+            <div class="paribahan title w-1/2 mx-auto text-center my-5">
+                <h1 class="text-4xl font-bold mb-2">J Paribahan</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quaerat, ab voluptate corporis nulla
                     obcaecati quia minus natus culpa deleniti, blanditiis, distinctio voluptas laborum tempora. Mollitia
                     iste vel accusamus provident?</p>
             </div>
 
-            <div class="ticket">
-                <h1 id="totalSeat">40</h1>
+            <div class="ticket flex justify-between bg-white p-10">
+                <div class="w-3/4">
+                    <!--  -->
+                    <div class="flex justify-between mb-6">
+
+                        <div class="flex space-x-2">
+                            <img class="w-[50px] h-[30px]" src="assets/bus-logo.png" alt="">
+                            <div>
+                                <h2 class="font-bold text-xl uppercase">Josim Paribahan</h2>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="flex bg-[#ddf8d9] rounded h-fit-content">
+                            <div><img src="assets/seat-green.png" alt=""></div>
+                            <h1 class="text-[#1DD100] "> <span id="totalSeat">40</span> Seats left</h1>
+                        </div>
+                    </div>
+
+
+
+                    <div class="ticketBody bg-gray-100 p-4 rounded">
+                        <div class="flex justify-between">
+                            <h3>Route</h3>
+                            <h3>Dhaka - Sylhet</h3>
+                        </div>
+                        <div class="flex justify-between border-b-2 border-t-2 border-dashed my-3 py-2">
+                            <h3>Departure Time</h3>
+                            <h3>9:00 PM</h3>
+                        </div>
+                        <div>
+                            <div class="btn">Boarding Point - Laxmipur</div>
+                            <div class="btn">Boarding Point - Laxmipur</div>
+                            <div class="btn">Boarding Point - Laxmipur</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-2">
+
+                    <i class="fa-solid fa-bangladeshi-taka-sign text-white bg-green-500 rounded-full p-4 h-6 w-6"></i>
+
+                    <h1 class="text-center text-xl">550 Taka</h1>
+                    <h1 class="text-center">Per Seat</h1>
+                </div>
             </div>
 
+            <!-- Seat -->
             <div class="seatAndPrice flex gap-20">
                 <div class="seatPlan flex-1">
-                    <h1 class="font-bold">Select You Seat</h1>
+                    <h1 class="font-bold text-xl">Select You Seat</h1>
+                    <div class="my-4 flex justify-between  border-dashed border-b-2 border-t-2   py-3 ">
+                        <div class="flex gap-2">
+                            <img src="/assets/seat-gray.png" alt="">
+                            <p class="text-md font-semibold">Available</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="/assets/seat-green-filled.png" alt="">
+                            <p class="text-md font-semibold text-green-500">Selected</p>
+                        </div>
+
+                    </div>
                     <table class="table">
 
                         <tbody>
@@ -39,7 +128,7 @@
                     </table>
                 </div>
                 <div class="seatDetails flex-1">
-                    <h1>Select Your Seat</h1>
+                    <h1 class="text-xl">Select Your Seat</h1>
                     <div id="ticketPriceCalculation">
                         <div class="overflow-x-auto">
                             <table class="table">
@@ -120,6 +209,33 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#030712] text-white px-6 md:px-10 lg:px-24 mt-20">
+
+        <div class="top-footer flex justify-between border-b border-dashed py-10">
+            <div>
+                <h1 class="text-2xl font-bold mb-2">J-Ticket</h1>
+                <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <div class="text-center">
+                <h6 class="">Download our app</h6>
+                <img src="/assets/playstore.png" alt="Play Store" class="mx-auto mt-4">
+            </div>
+        </div>
+
+
+        <div class="bottom-footer py-6 flex justify-between">
+            <p>@all rights reserved, J-Ticket services limited.2024</p>
+            <ul class="flex gap-4">
+                <li>Terms & condition</li>
+                <li>Return & refund policy</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+
+    </footer>
 
     <script src="index.js"></script>
 </body>
